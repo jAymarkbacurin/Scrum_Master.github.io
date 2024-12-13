@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Report - Scrum Master</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1>Progress Report Documentation</h1>
+    </div>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <section>
+            <h2>Project Details</h2>
+            <h4>Project Name: School Portal</h4>
+            <h4>Reporting period: November 24th - December 14th</h4>
+        </section>
+        
+        <section>
+            <h2>Team Members</h2>
+            <details>
+                <summary>View Team Roles</summary>
+                <ul class="team-list">
+                    <li><strong>Scrum Master:</strong> Jaymark Bacurin</li>
+                    <li><strong>Project Manager:</strong> Sophia Hagnaya</li>
+                    <li><strong>Software Architect:</strong> Loreano Lukkanit</li>
+                    <li><strong>UI/UX Designer:</strong> Jake Agustin</li>
+                    <li><strong>Frontend Developer:</strong> Angelika Dumsang</li>
+                    <li><strong>Backend Developer:</strong> Zedrick Piolo Castro</li>
+                    <li><strong>Data Analyst:</strong> Ortiz Bugtong</li>
+                    <li><strong>DevOps:</strong> Ruel Smith</li>
+                    <li><strong>QA Engineer:</strong> Jelmar Tinong</li>
+                </ul>
+            </details>
+        </section>
+    </aside>
+
+    <main class="main-content">
+        <h1>Scrum Master - School Portal Project</h1>
+        <h4>Project Name: School Portal</h4>
+        <h4>Reporting period: November 24th - December 14th</h4>
+        <section>
+            <h2>Contributions</h2>
+            <p>As a Scrum Master:</p>
+            <ul>
+                <li>Organized daily stand-up meetings and sprint planning sessions to help the team stay on track with project goals.</li>
+                <li>Assisted in monitoring sprint progress and ensuring tasks were completed on time while following Agile principles.</li>
+                <li>Helped address challenges, such as resource limitations and issues with integrating third-party APIs, by coordinating team efforts and conducting research.</li>
+                <li>Collaborated with team members and project stakeholders to gather feedback and prioritize tasks effectively.</li>
+                <li>Supported the testing process by helping the team perform initial testing of the mobile app integration with the backend systems.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Project Overview</h2>
+            <p>This progress report covers the second sprint of the School Portal Project. The team has focused on developing the backend and setting up the database structure. The project aims to create a centralized system for managing academic records, announcements, and student-teacher communication.</p>
+        </section>
+
+        <section>
+            <h2>Sprint Progress</h2>
+            <ul>
+                <li><strong>Sprint 1:</strong> Gathered requirements and conducted initial planning.</li>
+                <li><strong>Sprint 2:</strong> Completed backend setup and basic database structure.</li>
+                <li><strong>Sprint 3:</strong> Developed the user authentication module and tested for security.</li>
+            </ul>
+        </section>
+        <section> 
+            <h2>Sprint Summary</h2>
+            <p> Sprint Goals:</p>
+            <ul>
+                <li>Develop a responsive design for the website.</li>
+                <li>Complete the database structure for the school portal.</li>
+                <li>Application Programming Interface integration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Challenges</h2>
+            <ul>
+                <li>During the second sprint, the team faced difficulties in integrating third-party APIs. These issues were resolved through additional research and team collaboration.</li>
+                <li>The team also faced challenges in designing a responsive and user-friendly interface for the school portal. This was addressed through regular design reviews and user feedback sessions.</li>
+                <li>One of the challenges faced by the team was the limitation of computer resources needed to complete the project.</li>
+            </ul>
+        </section>
+        <section> 
+            <h2>Mobile Integration</h2>
+            <p> Mobile App:</p>
+            <ul>
+                <li>Developed a mobile app using flatter and React Native</li>
+                <li>Integrated the mobile app with the backend</li>
+                <li>integrating the mobile app with the school portal</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Upcoming Goals</h2>
+            <ul>
+                <li>Complete front-end development for the React Native app.</li>
+                <li>Develop a complete React version of the student portal.</li>
+                <li>Add authentication functionality to the Flutter app.</li>
+                <li>Begin testing and validation of features in a staging environment.</li>
+                <li>Prepare for user feedback and iterations based on suggestions.</li>
+            </ul>
+        </section>
+        
+    </main>
+</div>
+
+<footer>
+    Created by <a href="#">JAYMARK LASARTE BACURIN</a> - Scrum Master | School Portal Project
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section, index) => {
+            section.style.setProperty('--section-index', index);
+        });
+
+        // Add typing effect to main heading
+        const mainHeading = document.querySelector('h1');
+        mainHeading.classList.add('typing-effect');
+
+        // Add particle effect
+        const particlesCount = 50;
+        const container = document.querySelector('.container');
+        
+        for(let i = 0; i < particlesCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.cssText = `
+                position: fixed;
+                width: 2px;
+                height: 2px;
+                background: rgba(0, 243, 255, ${Math.random() * 0.5});
+                left: ${Math.random() * 100}vw;
+                top: ${Math.random() * 100}vh;
+                pointer-events: none;
+                border-radius: 50%;
+                animation: float ${5 + Math.random() * 10}s linear infinite;
+            `;
+            document.body.appendChild(particle);
+        }
+    });
+
+    // Add this CSS for particle animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100vh);
+            }
+        }
+    `;
+    document.head.appendChild(style);
+</script>
+
+</body>
+</html>
